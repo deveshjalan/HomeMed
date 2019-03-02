@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
 :root{
 	--primary-very-dark: #212121;
 	--primary-dark:#0d47a1;
@@ -12,3 +13,4 @@ body{
 	margin: 0;
 	padding: 0;
 }
+

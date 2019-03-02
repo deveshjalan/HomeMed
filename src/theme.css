@@ -1,5 +1,14 @@
 :root{
-    --primary-dark:#0d47a1;
-    --primary:#2196f3;
-    --primary-light:#bbdefb;
+	--primary-very-dark: #212121;
+	--primary-dark:#0d47a1;
+	--primary:#2196f3;
+	--primary-light:#bbdefb;
+	--font-light: white;
+	--font-dark: black;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
 }

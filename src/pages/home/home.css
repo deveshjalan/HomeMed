@@ -1,0 +1,31 @@
+@import url(../../theme.css);
+#navbar {
+	height: fit-content;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: var(--primary-dark);
+	display: flex;
+}
+
+.navbar-item {
+	color: var(--font-light);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 20px;
+	background-color: var(--primary-dark);
+	text-overflow: ellipsis;
+}
+
+.navbar-item:hover {
+	background-color: var(--primary);
+}
+
+.navbar-item:active {
+	background-color: var(--primary-very-dark);
+}
+
+#navbar > .current {
+	background-color: var(--primary-very-dark);
+}

@@ -67,6 +67,14 @@ body{
 	height:25px;
 	width:200px;
 }
+
+#email {
+	color:black;
+	border:none;
+	margin-top:15px;
+	height:25px;
+	width:200px;
+}
 button {
   	border:none;
 	outline:none;

@@ -5,27 +5,33 @@
         printf("Connect failed: %s\n", mysqli_connect_error());
         exit();
     }
-
     if(isset($_POST['login-btn'])) {
         session_start();
-        $email = mysqli_real_escape_string($_POST['email']);
-        $password = mysqli_real_escape_string($_POST['password']);
-        //echo 'alert("done")';
-        $sql = "SELECT * FROM users WHERE email=$email;";
-        $result = mysqli_query($link,$sql);
-        /*if($result = mysqli_query($link,$sql)) {
-            $_SESSION['message'] = "you are logged in";
-            $_SESSION['username'] = $username;
-            header("location: pages/home/home.html");
-        } */
-    
-        if ( false===$result ) {
-            printf("error: %s\n", mysqli_error($con));
-          }
-          else {
-            echo 'done.';
-          }
-          
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        
+        $sql = "SELECT * FROM users";
+        $result = mysqli_query($db,$sql);
+        $resultCheck = mysqli_num_rows($result);
+        if($resultCheck > 0){
+            while($row = mysqli_fetch_assoc($result)) {
+                //echo $row['email'];
+                //echo $email;
+                if($email == $row['email']){
+                    if($password == $row['password']){
+                        $_SESSION['message'] = "you are logged in";
+                        $_SESSION['username'] = $username;
+                        header("location: pages/home/home.html");
+                    }
+                    else{
+                        echo "Authentication failed !";
+                    }
+                    break;
+                }
+            }
+        }
+        
+        
     } 
 
 ?>

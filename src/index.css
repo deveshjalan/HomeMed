@@ -1,0 +1,123 @@
+@import url("theme.css");
+body{
+	background-color:var(--primary);
+}
+
+#box
+{
+	top:30%;
+	left:35%;
+	position:absolute;
+	/*border:2px solid black;*/
+	width:370px;
+	height:250px;
+	background-color:#b9f6ca;
+	border-radius:25px;
+}	 
+#box:hover{
+	box-shadow: 10px 10px 5px grey;
+}
+
+
+#bk{
+	width:100%;
+}
+#user{
+	margin-left:84px;
+	margin-top:30px;
+	position:absolute;
+	color:black;
+	
+}
+#user img{
+	margin-top:-180px;
+	height:150px;
+	width:280px;
+	margin-left:-26px;
+	border-radius:60%;
+	color:#64128128;
+	
+}
+#password{
+	margin-left:84px;
+	margin-top:76px;
+	position:relative;
+	color:black;
+}
+/*#loginBtn{
+	margin-left:120px;
+	margin-top:15px;
+	position:absolute;
+	color:black;
+	width:80px;
+	height:30px;
+}
+#signupBtn{
+	margin-left:0px;
+	margin-top:15px;
+	position:absolute;
+	color:black;
+	width:80px;
+	height:30px;
+}*/
+#pass {
+	color:black;
+	border:none;
+	margin-top:15px;
+	height:25px;
+	width:200px;
+}
+button {
+  	border:none;
+	outline:none;
+	margin-top:15px;
+	position:absolute;
+	color:black;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+}
+/* Float cancel and signup buttons and add an equal width */
+.loginBtn {
+	background-color: #69f0ae;
+	margin-left:120px;
+	margin-top:15px;
+	position:absolute;
+	color:black;
+	width:80px;
+	height:30px;
+  float: left;
+}
+.signupBtn {
+	background-color: #69f0ae;
+	margin-left:0px;
+	margin-top:15px;
+	position:absolute;
+	color:black;
+	width:80px;
+	height:30px;
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .signupBtn, .loginBtn {
+    width: 100%;
+  }
+}
+#home {
+	margin-left:35%;
+}
+
+#hk {
+	 color: #F9CE79;
+text-decoration:none;}
+
+#foot{
+	cursor:pointer;
+	padding-left:50px;
+}
+

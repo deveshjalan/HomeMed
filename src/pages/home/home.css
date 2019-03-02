@@ -32,6 +32,15 @@
 	background-color: var(--primary-very-dark);
 }
 
+#text {
+	padding: 30px;
+}
+
+#ft {
+	padding: 100px;
+	background-color: var(--primary-light);
+	text-align: center;
+}
 
 
 /*page specific content starts from here*/

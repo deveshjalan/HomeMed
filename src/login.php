@@ -22,6 +22,7 @@
                         $_SESSION['message'] = "you are logged in";
                         $_SESSION['username'] = $username;
                         header("location: pages/home/home.html");
+                        exit();
                     }
                     else{
                         echo "Authentication failed !";
@@ -29,6 +30,8 @@
                     break;
                 }
             }
+
+            echo "User account not found !";
         }
         
         
